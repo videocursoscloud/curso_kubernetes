@@ -1,1 +1,2 @@
-echo 1.0
+git rev-parse --short HEAD
+
