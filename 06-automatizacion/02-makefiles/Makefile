@@ -21,4 +21,5 @@ publish:
 	docker push ${REPO_URL}:latest
 	docker push ${REPO_URL}:${IMAGE_VERSION}
 clean:
-	docker rmi 05makefiles:${IMAGE_VERSION}
+	docker rmi ${REPO_URL}:${IMAGE_VERSION}
+	docker rmi ${REPO_URL}:latest
