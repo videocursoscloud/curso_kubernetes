@@ -1,5 +1,7 @@
-REPO_URL=972777588758.dkr.ecr.eu-west-1.amazonaws.com/05makefiles
+#REPO_URL=972777588758.dkr.ecr.eu-west-1.amazonaws.com/05makefiles
+REPO_URL=192.168.145.135:5000/05makefiles
 APP_NAME=05_makefiles
 CODE_URL=git@github.com:videocursoscloud/Python-example-app.git
-PORT=5000
+CONTAINER_PORT=5000
+HOST_PORT=8085
 TEST_GRACE_PERIOD=5
