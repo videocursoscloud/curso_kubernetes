@@ -11,7 +11,7 @@ all:
 build:
 	docker build --no-cache -t ${APP_NAME}:${IMAGE_VERSION} .
 login:
-	aws ecr get-login --no-include-email --region eu-west-1|xargs $1
+	aws ecr get-login --no-include-email --region eu-west-1|sh
 tag:
 	docker tag ${APP_NAME}:${IMAGE_VERSION} ${REPO_URL}:${IMAGE_VERSION}
 	docker tag ${APP_NAME}:${IMAGE_VERSION} ${REPO_URL}:latest
